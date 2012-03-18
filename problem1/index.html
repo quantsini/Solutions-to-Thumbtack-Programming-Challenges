@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+	<head>
+		<title>
+			Minesweeper
+		</title>
+		<style type="text/css">
+			div #newGame {
+				width: 100px;
+				margin-top: 1em;
+			}
+			
+			div #validate {
+				width: 100px;
+				margin-top: 1em;
+			}
+			
+			div #cheatMode {
+				width: 200px;
+				margin-top: 1em;
+			}
+			
+			div #save {
+				width: 100px;
+				margin-top: 1em;
+			}
+			
+			div #load {
+				width: 100px;
+				margin-top: 1em;
+			}
+		</style>
+		<script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+		<script type="text/javascript" src="js/Minesweeper.js"></script>
+		<script type="text/javascript" src="js/Main.js"></script>
+	</head>
+	<body>
+		<div id="controls">
+			Size: <input type="text" name="x" width="20" value="8" id="x" /> by <input type="text" name="y" id="y" value="8"/>
+			<br />
+			Number of Bombs: <input type="text" name="numBombs" id="numBombs" value="10"/>
+			<br />
+			<input type="submit" id="newGame" value="New Game" />
+			<input type="submit" id="save" value="Save Game..." />
+			<input type="submit" id="load" value="Load Game..." />
+			<div>
+			Save Game String (copy this): <input type="text" name="saveString" id="saveString" value=""/>
+			<br />
+			Load Game String (paste into here): <input type="text" name="loadString" id="loadString" value=""/>
+			</div>
+			<input type="submit" id="validate" value="Validate" />
+			<input type="submit" id="cheatMode" value="Toggle Cheat Mode" />
+			<br />
+			<input type="submit" id="graphics" value="Toggle graphics mode" disabled="true" />
+			<br />
+		</div>
+		<div id="status"></div>
+		<div id="gameContainer"></div>
+	</body>
+</html>
