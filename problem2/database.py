@@ -1,3 +1,5 @@
+#!/usr/bin/python
+
 # thumbtack program challenge #2: simple database
 # Henri Bai
 #
