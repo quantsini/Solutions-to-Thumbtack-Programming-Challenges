@@ -26,7 +26,7 @@ class Database(object):
 		# if we have a transaction history, read from the most recent and apply rollbacks
 		if (self._transactionHistory):
 			for key, val in self._transactionHistory[0].items():
-				self.__doWrite(key, val)
+				self._doWrite(key, val)
 			# remove the most recent transaction history
 			self._transactionHistory.pop(0)
 		else:
