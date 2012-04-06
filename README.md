@@ -45,7 +45,7 @@ Our database supports nested transactional blocks as you can tell by the above c
 
 Even though we aren't dealing with a ton of data, we still want to use memory efficiently. Typically, we will already have committed a lot of data when we begin a new transaction, but the transaction will only modify a few values. So, your solution should be efficient about how much memory is allocated for new transactions, i.e., it is bad if beginning a transaction nearly doubles your program's memory usage.
 
-## Problem 4: Request Matching
+## Problem 3: Request Matching
 Our goal here at Thumbtack is to connect consumers with quality service providers. You've been tasked with implementing the next generation fulfillment engine, which automatically chooses from among a database of service providers to fulfill a collection of requests.
 
 You'll be given a list of service providers, each tagged with one or more categories. You'll also be given a list of requests, each with the the category of the service needed and the dates the service may be done. Every request can be done in a single day. Your goal is to determine how many requests can be fulfilled. A request can only be fulfilled by a service provider in the correct category, and each provider can only do one job per day.
